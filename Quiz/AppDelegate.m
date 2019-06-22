@@ -21,9 +21,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    QuizViewController *test = [[QuizViewController alloc]     initWithNibName:@"QuizViewController" bundle:nil];
-    UINavigationController *nav = [[UINavigationController alloc]  initWithRootViewController:test];
-    self.window.rootViewController = nav;
+    QuizViewController *quizVC = [[QuizViewController alloc]     initWithNibName:@"QuizViewController" bundle:nil];
+    self.window.rootViewController = quizVC;
     [self.window makeKeyAndVisible];
     
     return YES;
